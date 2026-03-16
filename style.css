@@ -1,0 +1,126 @@
+/* ---------- GLOBAL ---------- */
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color:#FFDEA9;
+}
+
+/* ---------- HEADER ---------- */
+
+.header{
+  position: sticky;
+  top: 0;
+  background:#FFDEA9;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  z-index:1200;
+}
+
+/* ---------- BURGER ---------- */
+
+.burger{
+  width:30px;
+  height:25px;
+  cursor:pointer;
+}
+
+.burger span{
+  display:block;
+  height:4px;
+  background:black;
+  margin:5px 0;
+  transition:0.4s;
+}
+
+/* BURGER -> X animation */
+
+.burger.active span:nth-child(1){
+  transform: rotate(45deg) translate(5px,5px);
+}
+
+.burger.active span:nth-child(2){
+  opacity:0;
+}
+
+.burger.active span:nth-child(3){
+  transform: rotate(-45deg) translate(7px,-7px);
+}
+
+/* ---------- LOGO ---------- */
+
+.logo img{
+  height:40px;
+  width:auto;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-260px;
+  width:260px;
+  height:100%;
+  background:#F7CE8C;
+  padding-top:80px;
+  transition:0.4s;
+  z-index:1000;
+}
+
+.sidebar.active{
+  left:0;
+}
+
+.sidebar a{
+  display:block;
+  padding:15px 30px;
+  font-size:22px;
+  color:black;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.sidebar a:hover{
+  background:#F8B729;
+}
+
+/* ---------- OVERLAY ---------- */
+
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  opacity:0;
+  visibility:hidden;
+  transition:0.3s;
+}
+
+.overlay.active{
+  opacity:1;
+  visibility:visible;
+}
+
+/* ---------- PAGE CONTENT ---------- */
+
+main{
+  padding:40px 30px;
+}
+
+/* ---------- BILLEDE ---------- */
+
+.boessebillede{
+  text-align:center;
+  margin-top:20px;
+}
+
+.boessebillede img{
+  width:80%;
+  max-width:400px;
+  height:auto;
+}
