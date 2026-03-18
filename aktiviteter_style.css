@@ -1,0 +1,234 @@
+/* ---------- AKTIVITETER PAGE ---------- */
+
+.activities-page {
+  padding: 30px 16px 48px;
+}
+
+.activities-hero {
+  text-align: center;
+  padding: 8px 0 24px;
+}
+
+.activities-hero h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.activities-hero p {
+  max-width: 280px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* ---------- FILTER ---------- */
+
+.filter-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.filter-box {
+  position: relative;
+}
+
+.filter-toggle {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  background: #FFDEA9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter-icon {
+  position: relative;
+  width: 22px;
+  height: 18px;
+  display: block;
+}
+
+.filter-icon span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #660C8F;
+  border-radius: 999px;
+}
+
+.filter-icon span:nth-child(1) {
+  top: 0;
+  width: 100%;
+}
+
+.filter-icon span:nth-child(2) {
+  top: 7px;
+  width: 70%;
+  left: 30%;
+}
+
+.filter-icon span:nth-child(3) {
+  top: 14px;
+  width: 40%;
+  left: 60%;
+}
+
+.filter-menu {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  min-width: 130px;
+  background: #FFF6E2;
+  border: 2px solid #2b193d;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 30;
+}
+
+.filter-menu.hidden {
+  display: none;
+}
+
+.filter-option {
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-option.active {
+  background: #FFDEA9;
+}
+
+/* ---------- CARD GRID ---------- */
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 18px;
+}
+
+.activity-card h3 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.activity-image-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.activity-shadow {
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.row-yellow .activity-shadow {
+  background: #F8B729;
+}
+
+.row-pink .activity-shadow {
+  background: #FF67A2;
+}
+
+.row-darkpurple .activity-shadow {
+  background: #660C8F;
+}
+
+
+.activity-image-link img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #2b193d;
+}
+
+/* ---------- FILTER VISIBILITY ---------- */
+
+.activity-card.hidden-card {
+  display: none;
+}
+
+/* ---------- SMALLER PHONES ---------- */
+
+@media (max-width: 360px) {
+  .activities-page {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .activities-grid {
+    gap: 18px 14px;
+  }
+
+  .activities-hero h2 {
+    font-size: 36px;
+  }
+}
+
+/* ---------- TABLET AND UP ---------- */
+
+@media (min-width: 768px) {
+  .activities-page {
+    padding: 42px 36px 64px;
+  }
+
+  .activities-hero h2 {
+    font-size: 64px;
+  }
+
+  .activities-hero p {
+    max-width: 520px;
+    font-size: 24px;
+  }
+
+  .filter-toggle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .filter-menu {
+    min-width: 160px;
+  }
+
+  .filter-option {
+    font-size: 18px;
+  }
+
+  .activities-grid {
+    gap: 28px 24px;
+  }
+
+  .activity-card h3 {
+    font-size: 20px;
+  }
+}

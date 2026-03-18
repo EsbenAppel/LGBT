@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktiviteter</title>
+  <link rel="stylesheet" href="om_os_style.css">
+  <link rel="stylesheet" href="aktiviteter_style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="LGBT">
+      <h1>LGBT+</h1>
+    </div>
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
+      </a>
+    </div>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <a href="Om os.html">Om os</a>
+    <a href="vaermed.html">Vær med</a>
+    <a href="aktiviteter.html">Aktiviteter</a>
+    <a href="#">Viden</a>
+    <a href="#">Politik</a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="activities-page">
+    <section class="activities-hero">
+      <h2>Aktiviteter</h2>
+      <div class="section-line"></div>
+      <p>Info om aktiviteter osv.</p>
+    </section>
+
+    <div class="content-divider"></div>
+
+    <section class="filter-wrap">
+      <div class="filter-box">
+        <button class="filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterMenu">
+          <span class="filter-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        <div class="filter-menu hidden" id="filterMenu">
+          <button class="filter-option active" data-region="alle">Alle</button>
+          <button class="filter-option" data-region="jylland">Jylland</button>
+          <button class="filter-option" data-region="fyn">Fyn</button>
+          <button class="filter-option" data-region="sjælland">Sjælland</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="activities-grid">
+      <article class="activity-card row-yellow" data-region="jylland">
+        <h3>Dungeons and queers</h3>
+        <a href="#" class="activity-image-link">
+          <span class="activity-shadow"></span>
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'><rect width='320' height='220' rx='24' fill='%23d9d9d9'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23555555'>billede her</text></svg>" alt="Placeholder billede">
+        </a>
+      </article>
+
+      <article class="activity-card row-yellow" data-region="jylland">
+        <h3>Queer reads</h3>
+        <a href="#" class="activity-image-link">
+          <span class="activity-shadow"></span>
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'><rect width='320' height='220' rx='24' fill='%23d9d9d9'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23555555'>billede her</text></svg>" alt="Placeholder billede">
+        </a>
+      </article>
+
+      <article class="activity-card row-pink" data-region="fyn">
+        <h3>Lavender Køkkenet</h3>
+        <a href="#" class="activity-image-link">
+          <span class="activity-shadow"></span>
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'><rect width='320' height='220' rx='24' fill='%23d9d9d9'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23555555'>billede her</text></svg>" alt="Placeholder billede">
+        </a>
+      </article>
+
+      <article class="activity-card row-pink" data-region="fyn">
+        <h3>Regnbuefamilienetværk</h3>
+        <a href="#" class="activity-image-link">
+          <span class="activity-shadow"></span>
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'><rect width='320' height='220' rx='24' fill='%23d9d9d9'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23555555'>billede her</text></svg>" alt="Placeholder billede">
+        </a>
+      </article>
+
+      <article class="activity-card row-darkpurple" data-region="sjælland">
+        <h3>Mandeguppen</h3>
+        <a href="#" class="activity-image-link">
+          <span class="activity-shadow"></span>
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'><rect width='320' height='220' rx='24' fill='%23d9d9d9'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23555555'>billede her</text></svg>" alt="Placeholder billede">
+        </a>
+      </article>
+
+      <article class="activity-card row-darkpurple" data-region="sjælland">
+        <h3>Mimor - Gruppen</h3>
+        <a href="#" class="activity-image-link">
+          <span class="activity-shadow"></span>
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='220' viewBox='0 0 320 220'><rect width='320' height='220' rx='24' fill='%23d9d9d9'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%23555555'>billede her</text></svg>" alt="Placeholder billede">
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <p><strong>LGBT+ Danmark</strong></p>
+      <p><strong>Landsforeningen for bøsser, lesbiske,</strong></p>
+      <p><strong>biseksuelle og transpersoner</strong></p>
+    </div>
+
+    <div class="footer-info">
+      <p>Vestergade 18E, 2. sal</p>
+      <p>1456 København K</p>
+      <p>CVR 23072513</p>
+      <p>lgbt@lgbt.dk</p>
+    </div>
+
+    <div class="footer-social-section">
+      <p class="follow-title"><strong>Følg os</strong></p>
+
+      <div class="socials">
+        <a href="#" aria-label="Instagram">
+          <img src="lgbtbilleder/instagram.png" alt="Instagram">
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img src="lgbtbilleder/facebook.png" alt="Facebook">
+        </a>
+        <a href="#" aria-label="TikTok">
+          <img src="lgbtbilleder/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="om_os_script.js"></script>
+  <script src="aktiviteter_script.js"></script>
+</body>
+</html>
