@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap');
+
+/* ---------- GLOBAL ---------- */
+
+:root {
+  --bg: #FFF6E2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color:#FFF6E2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+  position: sticky;
+  top: 0;
+  background:#FFDEA9;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  z-index:1200;
+  position: relative;
+}
+
+.LGBT {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.LGBT h1 {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* ---------- BURGER ---------- */
+
+.burger{
+  width:30px;
+  height:25px;
+  cursor:pointer;
+}
+
+.burger span{
+  display:block;
+  height:4px;
+  background:purple;
+  margin:5px 0;
+  transition:0.4s;
+}
+
+/* BURGER -> X animation */
+
+.burger.active span:nth-child(1){
+  transform: rotate(45deg) translate(5px,5px);
+}
+
+.burger.active span:nth-child(2){
+  opacity:0;
+}
+
+.burger.active span:nth-child(3){
+  transform: rotate(-45deg) translate(7px,-7px);
+}
+
+/* ---------- LOGO ---------- */
+
+.logo img{
+  height:60px;
+  width:auto;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar{
+  position:fixed;
+  top:0;
+  left:-260px;
+  width:260px;
+  height:100%;
+  background:#F7CE8C;
+  padding-top:80px;
+  transition:0.4s;
+  z-index:1000;
+}
+
+.sidebar.active{
+  left:0;
+}
+
+.sidebar a{
+  display:block;
+  padding:15px 30px;
+  font-size:22px;
+  color:black;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.sidebar a:hover{
+  background:#F8B729;
+}
+
+/* ---------- OVERLAY ---------- */
+
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  opacity:0;
+  visibility:hidden;
+  transition:0.3s;
+  z-index:800;
+  pointer-events:none;
+}
+
+.overlay.active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+/* ---------- OM OS ---------- */
+
+.about-page {
+  padding: 30px 22px 48px;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 8px 0 24px;
+}
+
+.about-hero h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.section-line {
+  width: min(100%, 255px);
+  height: 3px;
+  margin: 14px auto 26px;
+  background: #6FA8DC;
+}
+
+.about-hero p {
+  max-width: 280px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.content-divider {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.75);
+  margin: 0 -22px 28px;
+}
+
+.about-links {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-card h3 {
+  width: 135px;
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.about-card-content {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  align-items: start;
+  gap: 16px;
+}
+
+.image-link {
+  position: relative;
+  display: block;
+  width: 135px;
+  min-width: 135px;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.image-shadow {
+  position: absolute;
+  top: 10px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+  background: #F8B729;
+  border-radius: 16px;
+  z-index: 0;
+}
+
+.image-link img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #2b193d;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 6px;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.read-more {
+  display: inline-block;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* ---------- SLIDESHOW ---------- */
+
+.slideshow-container {
+  max-width: 900px;
+  margin: 40px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mySlides {
+  display: none;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  background-color: #FF70A6;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot:hover {
+  background-color: black;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+/* ---------- SMALLER PHONES ---------- */
+
+@media (max-width: 360px) {
+  .about-card-content {
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+  }
+
+  .image-link {
+    width: 120px;
+    min-width: 120px;
+  }
+
+  .about-hero h2 {
+    font-size: 36px;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  background: #FFDEA9;
+  text-align: center;
+  padding: 48px 24px 56px;
+}
+
+.footer-top {
+  margin-bottom: 18px;
+}
+
+.footer-top p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.footer-info {
+  margin-bottom: 18px;
+}
+
+.footer-info p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.footer-social-section {
+  margin-top: 8px;
+}
+
+.follow-title {
+  margin: 8px 0 14px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+}
+
+.socials img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ---------- TABLET AND UP ---------- */
+
+@media (min-width: 768px) {
+  .about-page {
+    padding: 42px 36px 64px;
+  }
+
+  .about-hero h2 {
+    font-size: 64px;
+  }
+
+  .section-line {
+    width: 320px;
+    margin-bottom: 30px;
+  }
+
+  .about-hero p {
+    max-width: 520px;
+    font-size: 24px;
+  }
+
+  .content-divider {
+    margin-left: -36px;
+    margin-right: -36px;
+    margin-bottom: 36px;
+  }
+
+  .about-card h3 {
+    width: 220px;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .about-card-content {
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+  }
+
+  .image-link {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .card-text p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .read-more {
+    font-size: 16px;
+  }
+
+  .footer {
+  padding: 28px 20px 32px;
+}
+
+.footer-top p {
+  font-size: 1.4rem;
+}
+
+.footer-info p {
+  font-size: 1.25rem;
+}
+
+.footer p {
+  line-height: 1.3;
+}
+
+.follow-title {
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+.socials {
+  gap: 42px;
+}
+
+.socials a {
+  width: 42px;
+  height: 42px;
+}
+
+.socials img {
+  width: 64px;
+  height: 64px;
+}
+}

@@ -2,48 +2,139 @@
 <html lang="da">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>LGBT+</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LGBT+</title>
+  <link rel="stylesheet" href="om_os_style.css">
 </head>
 
 <body>
 
-<header class="header">
+  <header class="header">
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-<div class="burger" id="burger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+    <div class="LGBT">
+      <h1>LGBT+</h1>
+    </div>
 
-<div class="LGBT">
-  <h1>LGBT+</h1>
-</div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
+      </a>
+    </div>
+  </header>
 
-<div class="logo">
-<a href="index.html">
-<img src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
-</a>
-</div>
+  <nav class="sidebar" id="sidebar">
+    <a href="Om os.html">Om os</a>
+    <a href="vaermed.html">Vær med</a>
+    <a href="#">Aktiviteter</a>
+    <a href="#">Viden</a>
+    <a href="#">Politik</a>
+  </nav>
 
-</header>
+  <div class="overlay" id="overlay"></div>
 
-<nav class="sidebar" id="sidebar">
-  <a href="Om os.html">Om os</a>
-  <a href="vaermed.html">Vær med</a>
-  <a href="#">Aktiviteter</a>
-  <a href="#">Viden</a>
-  <a href="#">Politik</a>
-</nav>
+  <main class="about-page">
+    <section class="about-hero">
+      <h2>Om os</h2>
+      <div class="section-line"></div>
+      <p>
+        LGBT+ Danmark og deres historie og sårn.
+      </p>
+    </section>
 
+    <div class="content-divider"></div>
 
-<div class="overlay" id="overlay"></div>
+    <section class="about-links">
+      <article class="about-card">
+        <h3>Vores mission</h3>
+        <div class="about-card-content">
+          <a href="#" class="image-link" aria-label="Læs mere om vores mission">
+            <span class="image-shadow"></span>
+            <img src="lgbtbilleder/boesse.jpg" alt="Vores mission">
+          </a>
 
-<script src="script.js"></script>
+          <div class="card-text">
+            <p>
+              LGBT+ Danmark har til mission at skabe et trygt og mere forstående Danmark.
+            </p>
+            <a href="#" class="read-more">Læs mere</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="about-card">
+        <h3>FAQ</h3>
+        <div class="about-card-content">
+          <a href="#" class="image-link" aria-label="Læs mere i FAQ">
+            <span class="image-shadow"></span>
+            <img src="lgbtbilleder/regnbuenshelte.png" alt="FAQ">
+          </a>
+
+          <div class="card-text">
+            <p>
+              Ofte stillede spørgsmål. Både om LGBT+ Danmark og queer livet i Danmark.
+            </p>
+            <a href="#" class="read-more">Læs mere</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="about-card">
+        <h3>Historie</h3>
+        <div class="about-card-content">
+          <a href="#" class="image-link" aria-label="Læs mere om historien">
+            <span class="image-shadow"></span>
+            <img src="lgbtbilleder/kronik.jpg" alt="Historie">
+          </a>
+
+          <div class="card-text">
+            <p>
+              Historien bag LGBT+ Danmark og hvordan organisationen har udviklet sig.
+            </p>
+            <a href="#" class="read-more">Læs mere</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="om_os_script.js"></script>
 </body>
+
+<footer class="footer">
+  <div class="footer-top">
+    <p><strong>LGBT+ Danmark</strong></p>
+    <p><strong>Landsforeningen for bøsser, lesbiske,</strong></p>
+    <p><strong>biseksuelle og transpersoner</strong></p>
+  </div>
+
+  <div class="footer-info">
+    <p>Vestergade 18E, 2. sal</p>
+    <p>1456 København K</p>
+    <p>CVR 23072513</p>
+    <p>lgbt@lgbt.dk</p>
+  </div>
+
+  <div class="footer-social-section">
+    <p class="follow-title"><strong>Følg os</strong></p>
+
+    <div class="socials">
+      <a href="#" aria-label="Instagram">
+        <img src="lgbtbilleder/instagram.png" alt="Instagram">
+      </a>
+      <a href="#" aria-label="Facebook">
+        <img src="lgbtbilleder/facebook.png" alt="Facebook">
+      </a>
+      <a href="#" aria-label="TikTok">
+        <img src="lgbtbilleder/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+  </div>
+</footer>
+
 </html>
