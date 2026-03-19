@@ -3,10 +3,8 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>LGBT+</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LGBT+</title>
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -14,24 +12,32 @@
 <body>
 
 <header class="header">
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-<div class="burger" id="burger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+  <div class="LGBT">
+    <h1>LGBT+</h1>
+  </div>
 
-<div class="LGBT">
-  <h1>LGBT+</h1>
-</div>
-
-<div class="logo">
-<a href="index.html">
-<img src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
-</a>
-</div>
-
+  <div class="logo">
+    <a href="index.html">
+      <img src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
+    </a>
+  </div>
 </header>
+
+<nav class="sidebar" id="sidebar">
+  <a href="Om os.html">Om os</a>
+  <a href="vaermed.html">Vær med</a>
+  <a href="aktiviteter.html">Aktiviteter</a>
+  <a href="#">Viden</a>
+  <a href="#">Politik</a>
+</nav>
+
+<div class="overlay" id="overlay"></div>
 
 <nav class="sidebar" id="sidebar">
   <a href="Om os.html">Om os</a>
@@ -70,6 +76,61 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+
+<div class="content-divider"></div>
+
+ <section class="forside-links">
+      <article class="forside-kort">
+        <div class="forside-kort-content">
+          <a href="#" class="image-link" aria-label="Læs mere om vores mission">
+            <span class="image-shadow"></span>
+            <img src="lgbtbilleder/boesse.jpg" alt="Formand for LGBT+ Danmark">
+          </a>
+
+          <div class="card-text">
+            <p>
+              Formanden for LGBT+ Danmark i 2026 - Esben Appel (Haha det sjovt for det er jeg faktisk ikke tihi)
+            </p>
+          </div>
+        </div>
+      </article>
+
+<footer class="footer">
+
+  <div class="footer-section">
+    <p><strong>LGBT+ Danmark</strong><br>
+    Landsforeningen for bøsser, lesbiske,<br>
+    biseksuelle og transpersoner</p>
+  </div>
+
+  <div class="footer-info">
+    <p>
+      Vestergade 18E, 2. sal<br>
+      1456 København K<br>
+      CVR 23072513<br>
+      lgbt@lgbt.dk
+    </p>
+  </div>
+
+  <div class="footer-section footer-icons">
+  <p>Følg os</p>
+
+  <div class="socials">
+    <a href="#" target="_blank">
+      <img src="lgbtbilleder/instagram.png" alt="Instagram">
+    </a>
+
+    <a href="#" target="_blank">
+      <img src="lgbtbilleder/facebook.png" alt="Facebook">
+    </a>
+
+    <a href="#" target="_blank">
+      <img src="lgbtbilleder/tiktok.png" alt="TikTok">
+    </a>
+  </div>
+</div>
+
+</footer>
 
 <script src="script.js"></script>
 

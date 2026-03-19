@@ -26,7 +26,7 @@ body{
   align-items:center;
   padding:10px 20px;
   z-index:1200;
-  position: relative; 
+  position: relative;
 }
 
 .LGBT {
@@ -37,6 +37,7 @@ body{
 
 .LGBT h1 {
   margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 /* ---------- BURGER ---------- */
@@ -283,8 +284,6 @@ main{
   font-size: 15px;
   line-height: 1.35;
 }
-
-
 
 /* ---------- FOOTER ---------- */
 
