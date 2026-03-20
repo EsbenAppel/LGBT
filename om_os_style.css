@@ -257,6 +257,35 @@ img {
   text-decoration: underline;
 }
 
+.omos-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: #49B8D3;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 10px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  box-shadow: 0 4px 0 #2A93B7;
+}
+
+.omos-button:hover {
+  background: #3ca9c2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #2A93B7;
+}
+
+.omos-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 0 #2A93B7;
+}
+
 /* ---------- SLIDESHOW ---------- */
 
 .slideshow-container {
