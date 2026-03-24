@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilmeldelse</title>
+  <link rel="stylesheet" href="vaermed_style_bem.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="header">
+      <div class="burger" id="burger" aria-label="Åbn menu" aria-expanded="false" aria-controls="sidebar" role="button" tabindex="0">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+
+      <div class="header__title">
+        <h1 class="header__heading">LGBT+</h1>
+      </div>
+
+      <div class="header__logo">
+        <a href="Index_bem.html">
+          <img class="header__logo-img" src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
+        </a>
+      </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+      <a class="sidebar__link" href="Om_os_bem.html">Om os</a>
+      <a class="sidebar__link" href="vaermed_bem.html">Vær med</a>
+      <a class="sidebar__link" href="aktiviteter_bem.html">Aktiviteter</a>
+      <a class="sidebar__link" href="#">Viden</a>
+      <a class="sidebar__link" href="#">Politik</a>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <section class="hero">
+        <h2 class="hero__title">Tilmeldelse</h2>
+        <div class="hero__line"></div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="signup-content">
+        <div class="signup-form-wrap">
+          <a href="vaermed.html" class="signup-form-wrap__back" aria-label="Gå tilbage">←</a>
+
+          <form class="signup-form" id="signupForm">
+            <label class="signup-form__label" for="fornavn">Fornavn</label>
+            <input class="signup-form__input" type="text" id="fornavn" name="fornavn" required>
+
+            <label class="signup-form__label" for="efternavn">Efternavn</label>
+            <input class="signup-form__input" type="text" id="efternavn" name="efternavn" required>
+
+            <label class="signup-form__label" for="telefon">Tlf nummer</label>
+            <input class="signup-form__input" type="tel" id="telefon" name="telefon">
+
+            <label class="signup-form__label" for="email">Email</label>
+            <input class="signup-form__input" type="email" id="email" name="email" required>
+
+            <label class="signup-form__label" for="by">By</label>
+            <input class="signup-form__input" type="text" id="by" name="by">
+
+            <label class="signup-form__label" for="interesse">Hvordan vil du gerne hjælpe?</label>
+            <input class="signup-form__input" type="text" id="interesse" name="interesse">
+
+            <div class="signup-form__checkbox-wrap">
+              <input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+              <label for="nyhedsbrev">Tilmeld dig vores nyhedsbrev</label>
+            </div>
+
+            <button type="submit" class="signup-form__submit">TILMELD</button>
+            <p class="signup-form__message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__text">
+            <p>LGBT+ Danmark,</p>
+            <p>landsforeningen for</p>
+            <p>bøsser, lesbiske,</p>
+            <p>biseksuelle og</p>
+            <p>transpersoner</p>
+          </div>
+
+          <div class="footer__contact">
+            <p>Vestergade 18E, 2. sal</p>
+            <p>1456 København K</p>
+            <p>CVR 23072513</p>
+            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e488838690a488838690ca808f">[email&#160;protected]</a></p>
+          </div>
+        </div>
+
+        <div class="footer__socials">
+          <a class="footer__social-link" href="#" aria-label="Instagram">
+            <img class="footer__social-icon" src="lgbtbilleder/instagram.png" alt="Instagram">
+          </a>
+          <a class="footer__social-link" href="#" aria-label="Facebook">
+            <img class="footer__social-icon" src="lgbtbilleder/facebook.png" alt="Facebook">
+          </a>
+          <a class="footer__social-link" href="#" aria-label="TikTok">
+            <img class="footer__social-icon" src="lgbtbilleder/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="vaermed_bem.js"></script>
+</body>
+</html>

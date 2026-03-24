@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktiviteter</title>
+  <link rel="stylesheet" href="om_os_style_bem.css">
+  <link rel="stylesheet" href="aktiviteter_style_bem.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </div>
+
+    <div class="header__title">
+      <h1 class="header__heading">LGBT+</h1>
+    </div>
+
+    <div class="header__logo">
+      <a href="Index_bem.html">
+        <img class="header__logo-img" src="lgbtbilleder/projekt_4_logoer.png" alt="vores logo">
+      </a>
+    </div>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+<a class="sidebar__link" href="Om_os_bem.html">Om os</a>
+      <a class="sidebar__link" href="vaermed_bem.html">Vær med</a>
+      <a class="sidebar__link" href="aktiviteter_bem.html">Aktiviteter</a>
+    <a class="sidebar__link" href="#">Viden</a>
+    <a class="sidebar__link" href="#">Politik</a>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="activities-page">
+    <section class="activities-hero">
+      <h2 class="activities-hero__title">Aktiviteter</h2>
+      <div class="about-hero__line"></div>
+      <p class="activities-hero__description">
+        LGBT+ Danmark har et bredt udvalg af aktiviteter rundt omkring i landet. Der er noget for alle: alt fra hyggelige cafébesøg, vandreklubber og spilaftener.
+      </p>
+    </section>
+
+    <div class="content-divider"></div>
+
+    <section class="filter">
+      <div class="filter__box">
+        <button class="filter__toggle" id="filterToggle" aria-expanded="false" aria-controls="filterMenu">
+          <span class="filter__icon" aria-hidden="true">
+            <span class="filter__icon-line"></span>
+            <span class="filter__icon-line"></span>
+            <span class="filter__icon-line"></span>
+          </span>
+        </button>
+
+        <div class="filter__menu filter__menu--hidden" id="filterMenu">
+          <button class="filter__option filter__option--active" data-region="alle">Alle</button>
+          <button class="filter__option" data-region="jylland">Jylland</button>
+          <button class="filter__option" data-region="fyn">Fyn</button>
+          <button class="filter__option" data-region="sjælland">Sjælland</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="activities-grid">
+      <article class="card card--yellow" data-region="jylland">
+        <h3 class="card__title">Dungeons and queers</h3>
+        <a href="#" class="card__image-link">
+          <span class="card__image-shadow"></span>
+          <img class="card__image" src="lgbtbilleder/dungeons_and_queers.png" alt="Dungeons and queers aktivitet">
+        </a>
+      </article>
+
+      <article class="card card--yellow" data-region="jylland">
+        <h3 class="card__title">Queer reads</h3>
+        <a href="#" class="card__image-link">
+          <span class="card__image-shadow"></span>
+          <img class="card__image" src="lgbtbilleder/queer_reads.png" alt="Queer reads aktivitet">
+        </a>
+      </article>
+
+      <article class="card card--pink" data-region="fyn">
+        <h3 class="card__title">Lavender Køkkenet</h3>
+        <a href="#" class="card__image-link">
+          <span class="card__image-shadow"></span>
+          <img class="card__image" src="lgbtbilleder/lavender_koekkenet.png" alt="Lavender Køkkenet aktivitet">
+        </a>
+      </article>
+
+      <article class="card card--pink" data-region="fyn">
+        <h3 class="card__title">Regnbuefamilienetværk</h3>
+        <a href="#" class="card__image-link">
+          <span class="card__image-shadow"></span>
+          <img class="card__image" src="lgbtbilleder/regnbuefamilienetvaerkert.png" alt="Regnbuefamilienetværk aktivitet">
+        </a>
+      </article>
+
+      <article class="card card--purple" data-region="sjælland">
+        <h3 class="card__title">Mandegruppen</h3>
+        <a href="#" class="card__image-link">
+          <span class="card__image-shadow"></span>
+          <img class="card__image" src="lgbtbilleder/mandegruppen.jpg" alt="Mandegruppen aktivitet">
+        </a>
+      </article>
+
+      <article class="card card--purple" data-region="sjælland">
+        <h3 class="card__title">Mimor - Gruppen</h3>
+        <a href="#" class="card__image-link">
+          <span class="card__image-shadow"></span>
+          <img class="card__image" src="lgbtbilleder/miomor_gruppen.png" alt="Mimor-Gruppen aktivitet">
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__text">
+          <p>LGBT+ Danmark,</p>
+          <p>landsforeningen for</p>
+          <p>bøsser, lesbiske,</p>
+          <p>biseksuelle og</p>
+          <p>transpersoner</p>
+        </div>
+
+        <div class="footer__contact">
+          <p>Vestergade 18E, 2. sal</p>
+          <p>1456 København K</p>
+          <p>CVR 23072513</p>
+          <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb878c899fab878c899fc58f80">[email&#160;protected]</a></p>
+        </div>
+      </div>
+
+      <div class="footer__socials">
+        <a class="footer__social-link" href="#" aria-label="Instagram">
+          <img class="footer__social-icon" src="lgbtbilleder/instagram.png" alt="Instagram">
+        </a>
+        <a class="footer__social-link" href="#" aria-label="Facebook">
+          <img class="footer__social-icon" src="lgbtbilleder/facebook.png" alt="Facebook">
+        </a>
+        <a class="footer__social-link" href="#" aria-label="TikTok">
+          <img class="footer__social-icon" src="lgbtbilleder/tiktok.png" alt="TikTok">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="om_os_script.js"></script>
+  <script src="aktiviteter_script_bem.js"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+/* ========================================
+   BEM CSS STRUCTURE
+   Block__Element--Modifier
+   ======================================== */
+
+/* ---------- AKTIVITETER PAGE ---------- */
+
+:root {
+  --bg: #FFF6E2;
+  --header-footer: #FFDEA9;
+}
+
+/* ===========================================
+   BLOCK: activities-page
+   =========================================== */
+
+.activities-page {
+  padding: 30px 16px 48px;
+}
+
+/* ===========================================
+   BLOCK: activities-hero
+   =========================================== */
+
+.activities-hero {
+  text-align: center;
+  padding: 8px 0 24px;
+}
+
+.activities-hero__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.activities-hero__description {
+  max-width: 280px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* ===========================================
+   BLOCK: filter
+   =========================================== */
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.filter__box {
+  position: relative;
+}
+
+.filter__toggle {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  background: #FFDEA9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter__icon {
+  position: relative;
+  width: 22px;
+  height: 18px;
+  display: block;
+}
+
+.filter__icon-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #660C8F;
+  border-radius: 999px;
+}
+
+.filter__icon-line:nth-child(1) {
+  top: 0;
+  width: 100%;
+}
+
+.filter__icon-line:nth-child(2) {
+  top: 7px;
+  width: 70%;
+  left: 30%;
+}
+
+.filter__icon-line:nth-child(3) {
+  top: 14px;
+  width: 40%;
+  left: 60%;
+}
+
+.filter__menu {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  min-width: 130px;
+  background: #FFF6E2;
+  border: 2px solid #2b193d;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 30;
+}
+
+/* Modifier: filter__menu--hidden */
+.filter__menu--hidden {
+  display: none;
+}
+
+.filter__option {
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Modifier: filter__option--active */
+.filter__option--active {
+  background: #FFDEA9;
+}
+
+/* ===========================================
+   BLOCK: activities-grid
+   =========================================== */
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 18px;
+}
+
+/* ===========================================
+   BLOCK: card
+   =========================================== */
+
+.card {
+  /* Base card styles */
+}
+
+.card__title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.card__image-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  text-decoration: none;
+}
+
+.card__image-shadow {
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  z-index: 0;
+}
+
+/* Modifier: card--yellow */
+.card--yellow .card__image-shadow {
+  background: #F8B729;
+}
+
+/* Modifier: card--pink */
+.card--pink .card__image-shadow {
+  background: #FF67A2;
+}
+
+/* Modifier: card--purple */
+.card--purple .card__image-shadow {
+  background: #660C8F;
+}
+
+.card__image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #2b193d;
+}
+
+/* Modifier: card--hidden */
+.card--hidden {
+  display: none;
+}
+
+/* ===========================================
+   BLOCK: footer (duplicated from base for standalone use)
+   =========================================== */
+
+.footer {
+  background: #FFDEA9;
+  padding: 18px 18px 28px;
+  border-top: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  gap: 18px;
+  align-items: start;
+}
+
+.footer__text p {
+  margin: 0 0 2px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footer__contact {
+  margin-top: 14px;
+}
+
+.footer__contact p {
+  margin: 0 0 2px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.footer__social-link {
+  display: block;
+}
+
+.footer__social-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+/* ===========================================
+   RESPONSIVE: Smaller Phones
+   =========================================== */
+
+@media (max-width: 360px) {
+  .activities-page {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .activities-grid {
+    gap: 18px 14px;
+  }
+
+  .activities-hero__title {
+    font-size: 36px;
+  }
+}
+
+/* ===========================================
+   RESPONSIVE: Tablet
+   =========================================== */
+
+@media (min-width: 768px) {
+  .activities-page {
+    padding: 42px 36px 64px;
+  }
+
+  .activities-hero__title {
+    font-size: 64px;
+  }
+
+  .activities-hero__description {
+    max-width: 520px;
+    font-size: 24px;
+  }
+
+  .filter__toggle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .filter__menu {
+    min-width: 160px;
+  }
+
+  .filter__option {
+    font-size: 18px;
+  }
+
+  .activities-grid {
+    gap: 28px 24px;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr 100px;
+  }
+
+  .footer__text p,
+  .footer__contact p {
+    font-size: 18px;
+  }
+
+  .footer__social-icon {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+/* ===========================================
+   RESPONSIVE: Desktop
+   =========================================== */
+
+@media (min-width: 1024px) {
+  .activities-page {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 34px 0 80px;
+  }
+
+  .activities-hero {
+    padding-bottom: 30px;
+  }
+
+  .activities-hero__title {
+    font-size: clamp(3.6rem, 5vw, 5rem);
+  }
+
+  .activities-hero__description {
+    max-width: 760px;
+    font-size: 1.25rem;
+  }
+
+  .filter {
+    margin-bottom: 30px;
+  }
+
+  .filter__toggle {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+  }
+
+  .filter__menu {
+    top: 64px;
+    min-width: 180px;
+  }
+
+  .activities-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.46);
+    border: 2px solid rgba(43, 25, 61, 0.08);
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 18px 36px rgba(43, 25, 61, 0.08);
+  }
+
+  .card__title {
+    font-size: 1.3rem;
+    min-height: 2.8em;
+    margin-bottom: 16px;
+  }
+
+  .card__image-shadow {
+    top: 12px;
+    left: -8px;
+  }
+
+  .card__image-link,
+  .card__image,
+  .card__image-shadow {
+    border-radius: 18px;
+  }
+
+  .footer {
+    padding: 36px 40px 40px;
+  }
+
+  .footer__inner {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .footer__text p,
+  .footer__contact p {
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+
+  .footer__socials {
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .footer__social-icon {
+    width: 52px;
+    height: 52px;
+  }
+}
