@@ -247,6 +247,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  margin-bottom: 30px;
 }
 
 .forside-card {
